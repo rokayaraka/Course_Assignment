@@ -29,12 +29,12 @@ class Manager extends Employee{
 }
 
 class Developer extends Employee{
-  String prLanguage;
-  Developer({ required String name, required double salary, required this.prLanguage}):super(name: name,salary: salary);
+  String ProgrammingLanguage;
+  Developer({ required String name, required double salary, required this.ProgrammingLanguage}):super(name: name,salary: salary);
 
   void displayDeveloper()
   {
-    print("Name: $name, Salary: $salary, Language: $prLanguage");
+    print("Name: $name, Salary: $salary, Programing Language: $ProgrammingLanguage");
   }
 }
 
@@ -76,7 +76,7 @@ Book book2 = Book(title: "Math", author: "Hasan", price: 700);
 print("Title: ${book2.title}, Author: ${book2.author}, Discout Price: ${book2.discountPrice(10)}");
 Manager m1 = Manager(name: "Raka", salary: 8000, department: "HR");
 m1.displayManager();
-Developer d1 = Developer(name: "Afridi", salary: 70000, prLanguage: "C++");
+Developer d1 = Developer(name: "Afridi", salary: 70000, ProgrammingLanguage: "C++");
 d1.displayDeveloper();
 Fan fan=Fan();
 fan.turnOn();
